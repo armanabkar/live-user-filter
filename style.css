@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 20rem;
+  position: absolute;
+  top: 2rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  display: inline-block;
+  margin: 5px 0 20px;
+  opacity: 0.8;
+}
+
+.header {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 25px 25px;
+  text-align: center;
+}
+
+.header input {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.header input:focus {
+  outline: none;
+}
+
+.user-list {
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 25rem;
+  overflow-y: auto;
+}
+
+.user-list li {
+  display: flex;
+  padding: 0.8rem 1rem 0.6rem 1rem;
+}
+
+.user-list img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+  border: 2px solid #2195f3b0;
+}
+
+.user-list .user-info {
+  margin-left: 10px;
+}
+
+.user-list .user-info h4 {
+  margin: 0 0 10px;
+  letter-spacing: 0.1rem;
+}
+
+.user-list .user-info p {
+  font-size: 0.8rem;
+  color: rgb(66, 66, 66);
+}
+
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.user-list li.hide {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 11px; /* width of the entire scrollbar */
+  overflow: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff; /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2196f3; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 2px solid #fafafa; /* creates padding around scroll thumb */
+}
+
+.loading {
+  margin: 1rem auto;
+  letter-spacing: 0.2rem;
+  color: #0a1e2fb0;
+}
